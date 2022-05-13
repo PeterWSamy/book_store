@@ -83,11 +83,3 @@ app.get('/getBook', function (req, res) {
         res.send(books)
     })
 })
-app.get('/getPerson', function (req, res) {
-    person.find(function(err,persons){
-        if(err){
-            console.log(err)
-        }
-        res.send(persons)
-    })
-})
